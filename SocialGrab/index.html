@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SocialGrab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="logo">⬇</span> SocialGrab</div>
+    <div id="host" class="host"></div>
+  </header>
+
+  <section class="compose">
+    <textarea id="urls" rows="2" spellcheck="false"
+      placeholder="Paste a YouTube, Instagram, LinkedIn, Pinterest or X link. For several, put one per line."></textarea>
+    <div id="detected" class="chips"></div>
+    <div class="row">
+      <select id="quality" title="Download quality">
+        <option value="max">Highest quality · MP4 (H.264)</option>
+        <option value="fast">Fast · native MP4 (≤1080p on YouTube)</option>
+        <option value="prores">Highest quality · ProRes 422 HQ (.mov)</option>
+        <option value="audio">Audio only · WAV</option>
+      </select>
+    </div>
+    <div class="row">
+      <button id="paste" class="ghost">Paste</button>
+      <button id="go" class="primary">Download &amp; Import</button>
+    </div>
+  </section>
+
+  <section id="jobs">
+    <div id="empty" class="empty">Downloads you start show up here. Each file is saved to disk and added to your project automatically.</div>
+  </section>
+
+  <details id="settings">
+    <summary>Settings</summary>
+    <label class="field">
+      <span>Save files to</span>
+      <select id="saveMode">
+        <option value="project">“Social Downloads” folder next to the project</option>
+        <option value="custom">A folder I choose</option>
+      </select>
+    </label>
+    <div id="customRow" class="row hidden">
+      <input id="customDir" type="text" readonly>
+      <button id="chooseDir" class="ghost">Choose…</button>
+    </div>
+    <label class="field">
+      <span>Project bin / folder name</span>
+      <input id="binName" type="text" placeholder="Social Downloads">
+    </label>
+    <label class="field">
+      <span>Use login cookies from browser <em>(for private or login-only posts on Instagram and LinkedIn)</em></span>
+      <select id="cookies">
+        <option value="none">None</option>
+        <option value="chrome">Chrome</option>
+        <option value="safari">Safari</option>
+        <option value="firefox">Firefox</option>
+        <option value="edge">Edge</option>
+        <option value="brave">Brave</option>
+        <option value="vivaldi">Vivaldi</option>
+        <option value="opera">Opera</option>
+      </select>
+    </label>
+  </details>
+
+  <footer>
+    <div id="toolStatus" class="tools">Checking tools…</div>
+    <button id="installBtn" class="ghost small">Install tools</button>
+  </footer>
+
+  <script src="js/engine.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
