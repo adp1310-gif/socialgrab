@@ -6,6 +6,8 @@ SocialGrab is a panel that runs inside Premiere Pro and After Effects. Paste a l
 2. convert it to an editing-friendly format when needed (for example, YouTube's VP9 or AV1 4K becomes H.264),
 3. import it into your project, in a bin (Premiere) or folder (AE) named **Social Downloads**.
 
+![SocialGrab panel in Premiere Pro and After Effects](docs/screenshot.png)
+
 Works on **Windows and macOS**, in **Premiere Pro 2021+** and **After Effects 2021+**.
 
 ## ⬇️ Download
